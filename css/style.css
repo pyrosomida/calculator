@@ -1,0 +1,196 @@
+@import url(https://fonts.googleapis.com/css?family=Niconne|Inconsolata:400|Roboto:500);
+body {
+  background-color: white;
+}
+div, h1 {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+h1 {
+  cursor: pointer;
+  cursor: hand;
+}
+#container {
+  margin: 0 auto;
+  width: 320px;
+  max-width:320px;
+  height: 519px;
+}
+.calculator {
+  position: relative;
+  border-radius: 15px 15px 40px 40px / 10px 10px 40px 40px;
+  background: #F0A400; /* yellow */
+  width: inherit;
+  height: inherit;
+  box-shadow: inset 0 -10px 8px rgba(0,0,0,0.6),
+    inset 0 8px 18px rgba(255,255,255,0.8),
+    0px 10px 10px 0px rgba(0,0,0,0.7);
+}
+#top_container {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 300px;
+  height:150px;
+  border-radius: 15px 15px 40px 40px / 10px 10px 40px 40px;
+  border: 2px inset rgba(0,0,0,0.3);
+}
+#screen_container {
+  position: absolute;
+  top: 12px;
+  left: 8px;
+  width: 280px;
+  height:70px;
+  border-radius: 10px;
+  border: 2px inset rgba(0,0,0,0.5);
+}
+#calc_screen {
+  position: absolute;
+  top: 6px;
+  left: 10px;
+  width: 240px;
+  height: 45px;
+  background: #250109; /* very dark red */
+  border-radius: 10px;
+  border: 5px inset rgba(0, 0, 0, 0.4);
+  font-family: Inconsolata, monospace;
+  font-size: 36px;
+  color: #F80C29; /* bright red */
+  text-align: right;
+  padding: 5px 5px 0 5px;
+}
+#logo {
+  position: relative;
+  top:80px;
+  text-align: center;
+  font-family: Niconne, cursive;
+  font-size: 36px;
+  color: rgba(255,255,255,0.6);
+  text-shadow: 1px 1px rgba(0,0,0,0.3);
+}
+/* individual button positioning */
+#AC {
+  top: 200px;
+  left: 25px;
+}
+#CE {
+  top: 200px;
+  left: 95px;
+}
+#percent {
+  top: 200px;
+  left: 165px;
+}
+#divide {
+  top: 200px;
+  left: 235px;
+}
+#seven {
+  top: 257px;
+  left: 25px;
+}
+#eight {
+  top: 257px;
+  left: 95px;
+}
+#nine {
+  top: 257px;
+  left: 165px;
+}
+#multiply {
+  top: 257px;
+  left: 235px;
+}
+#four {
+  top: 314px;
+  left: 25px;
+}
+#five {
+  top: 314px;
+  left: 95px;
+}
+#six {
+  top: 314px;
+  left: 165px;
+}
+#subtract {
+  top: 314px;
+  left: 235px;
+}
+#one {
+  top: 371px;
+  left: 25px;
+}
+#two {
+  top: 371px;
+  left: 95px;
+}
+#three{
+  top: 371px;
+  left: 165px;
+}
+#add {
+  top: 371px;
+  left: 235px;
+}
+#zero {
+  top: 428px;
+  left: 25px;
+}
+#point {
+  top: 428px;
+  left: 95px;
+}
+#equals {
+  top: 428px;
+  left: 165px;
+}
+/* ./positioning */
+/* button styling */
+.button, .big_button {
+  position: absolute;
+  width: 60px;
+  height: 37px;
+  border-radius: 5px;
+  background: #870000;/* dark red */
+  box-shadow: inset -1px -3px 4px 0px rgba(0,0,0,0.5),
+    inset 1px 3px 4px 0px rgba(255,255,255,0.3),
+    1px 3px 1px 0px rgba(0,0,0,1);
+  font-family: Roboto, sans-serif;
+  text-align: center;
+  color: rgba(255,255,255,0.6);
+  font-size: 28px;
+  cursor:pointer;
+  cursor:hand;
+}
+.big_button {
+  height: 94px;
+}
+/* ./button styling */
+/* button pressing effects */
+.button:active, .button:focus {
+  background-image: radial-gradient(closest-corner at 30px 18px ,
+  rgba(0,0,0,0.5) 0%, #870000 70%);
+  text-indent: 1px;
+  transform: translate(1px, 1px);
+  box-shadow: inset -1px -3px 4px 0px rgba(0,0,0,0.5),
+    inset 1px 3px 4px 0px rgba(255,255,255,0.3),
+    0px 1px 1px 0px rgba(0,0,0,1);
+}
+#add:active, #add:focus{
+  background-image: radial-gradient(closest-corner at 30px 45px ,
+    rgba(0,0,0,0.4) 00%, #870000 70%);
+  text-indent: 1px;
+}
+#AC, #CE {
+  background: #D30202;
+}
+#AC:active, #CE:active, #AC:focus, #CE:focus {
+  background-image: radial-gradient(closest-corner at 30px 20px ,
+    rgba(0,0,0,0.2) 0%, #D30202 70%);
+  text-indent: 2px;
+}
+/* ./button pressing effects */
