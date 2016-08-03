@@ -15,8 +15,7 @@ h1 {
 }
 #container {
   margin: 0 auto;
-  width: 320px;
-  max-width:320px;
+  width:320px;
   height: 519px;
 }
 .calculator {
